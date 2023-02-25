@@ -1,0 +1,137 @@
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.heading {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26272b;
+  box-shadow: 0px 0px 12px #6e7177;
+  border-radius: 8px;
+  margin: 2rem 1rem;
+  padding: .7rem 1rem;
+  font-weight: 700;
+}
+.heading span {
+  position: absolute;
+  display: block;
+}
+
+
+.heading span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#6e7177);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+.heading span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#6e7177);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+.heading span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#6e7177);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+
+.heading span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#6e7177);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+}
+
+
+
+
+
+
+
+.coin-name {
+  margin-left: -4rem;
+}
+
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26272b;
+  box-shadow: 0px 0px 12px #282a2d;
+  border-radius: 8px;
+  margin: 2rem 1rem;
+  padding: .7rem 1rem;
+}
+
+.coin-row:hover {
+  transform: scale(1.04);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+img {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.img-symbol {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .hide-mobile {
+    display: none;
+  }
+}
